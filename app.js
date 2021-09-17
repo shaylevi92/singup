@@ -49,7 +49,7 @@ app.post("/", function(req, res) {
             })
         })
 
-        if (response.statusCode === 2000) {
+        if (response.statusCode === 200) {
             res.sendFile(__dirname + "/success.html")
         }
         else{
